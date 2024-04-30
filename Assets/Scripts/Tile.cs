@@ -7,12 +7,10 @@ public class Tile : MonoBehaviour
 {
     public TileData TileData;
 
-    public GameObject buildingPrefab;
-
     internal void Build(GameObject prefab)
     {
         var bld = Instantiate(prefab, transform);
-        bld.transform.localPosition = new Vector3(1, 0, 1); // Changed this haha
+        bld.transform.localPosition = new Vector3(1, 0, 1);
         TileData.isOccupied = true;
     }
 
@@ -23,9 +21,10 @@ public class Tile : MonoBehaviour
             return;
         }
         CommandQueue.Instance.EnqueueCommand(new BuildCommand() { 
-            prefab = buildingPrefab,
+            prefab = ResourceManager.currentBuilding,
             tile = this
         });
+        Debug.Log(ResourceManager.currentBuilding.name);
         ResourceManager.wood -= 10;
         ResourceManager.stone -= 10;
     }

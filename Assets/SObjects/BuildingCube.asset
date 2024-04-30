@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f245df340e1621a48a37e324336ceb1f, type: 3}
+  m_Name: BuildingCube
+  m_EditorClassIdentifier: 
+  buildingName: Cube
+  wood: 0
+  stone: 0
+  buildingDataList: []
+  buildingPrefab: {fileID: 4399464018654439642, guid: b8e283e73f9ff50438e872a98bef03b0,
+    type: 3}
+  buttonPrefab: {fileID: 0}
+  buttonContainer: {fileID: 0}
